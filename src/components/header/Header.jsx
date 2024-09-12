@@ -28,7 +28,7 @@ export function Header() {
                     <span className={headerStyle.value}>0</span>
                 </div>
             </div>
-            <Button />
+            <Button text="New task" icon="+" />
         </header>
     );
 }
