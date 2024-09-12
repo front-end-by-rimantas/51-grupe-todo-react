@@ -15,11 +15,15 @@ export function Tasks() {
             </div>
             <div className={style.column}>
                 <h2 className={style.title}>In progress</h2>
-                <ul className={style.list}>LIST...</ul>
+                <ul className={style.list}>
+                    <TaskCard />
+                </ul>
             </div>
             <div className={style.column}>
                 <h2 className={style.title}>Done</h2>
-                <ul className={style.list}>LIST...</ul>
+                <ul className={style.list}>
+                    <TaskCard />
+                </ul>
             </div>
         </section>
     );
