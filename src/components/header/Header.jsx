@@ -1,6 +1,6 @@
 import logo from '../../assets/logo.png';
+import { Button } from '../button/Button';
 import headerStyle from './Header.module.css';
-import buttonStyle from './Button.module.css';
 
 export function Header() {
     return (
@@ -28,10 +28,7 @@ export function Header() {
                     <span className={headerStyle.value}>0</span>
                 </div>
             </div>
-            <button className={buttonStyle.btn}>
-                <span className={buttonStyle.icon}>+</span>
-                <span className={buttonStyle.text}>New task</span>
-            </button>
+            <Button />
         </header>
     );
 }
