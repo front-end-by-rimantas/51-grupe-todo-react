@@ -11,6 +11,17 @@
 }
 .btn > .text {
 }
+.btn.small {
+  padding: 0.7em 0.9em;
+  font-size: 0.9rem;
+  line-height: 1em;
+}
+.btn.big {
+  padding: 0.9em 1.2em;
+  font-size: 1.1rem;
+  line-height: 1em;
+  border-radius: 0.4em;
+}
 
 .btn > .icon + .text {
   display: none;
