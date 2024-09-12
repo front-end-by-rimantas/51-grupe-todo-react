@@ -11,3 +11,13 @@
 }
 .btn > .text {
 }
+
+.btn > .icon + .text {
+  display: none;
+}
+
+@media (min-width: 28rem) {
+  .btn > .icon + .text {
+    display: inline;
+  }
+}
