@@ -8,16 +8,16 @@ export function Form() {
             <form className={style.formCreate}>
                 <fieldset className={style.formRow}>
                     <label className={style.label} htmlFor="task">Task</label>
-                    <input className={style.input} id="task" type="text" required />
+                    {/* <input className={style.input} id="task" type="text" required /> */}
                 </fieldset>
                 <div className={style.columns}>
                     <fieldset className={style.formRow}>
                         <label className={style.label} htmlFor="deadline">Deadline</label>
-                        <input className={style.input} id="deadline" type="date" value="2024-09-03" min="2024-09-03" max="2025-09-03" required />
+                        {/* <input className={style.input} id="deadline" type="date" value="2024-09-03" min="2024-09-03" max="2025-09-03" required /> */}
                     </fieldset>
                     <fieldset className={style.formRow}>
                         <label className={style.label} htmlFor="color">Color</label>
-                        <input className={style.input} id="color" type="color" required />
+                        {/* <input className={style.input} id="color" type="color" required /> */}
                     </fieldset>
                 </div>
                 <fieldset className={style.formRow + ' ' + style.columns}>
