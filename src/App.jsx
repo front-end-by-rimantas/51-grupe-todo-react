@@ -1,24 +1,19 @@
-import { useState } from "react";
 import { Footer } from "./components/footer/Footer";
+import { Form } from "./components/form/Form";
 import { Header } from "./components/header/Header";
 import { Main } from "./components/main/Main";
+import { ContextWrapper } from "./context/GlobalContext";
+import { LightboxContextWrapper } from "./context/LightboxContext";
 
 export function App() {
-  const [cardMenuVisibleById, setCardMenuVisibleById] = useState(-1);
-
-  function hideOptionsMenu() {
-    setCardMenuVisibleById(-1);
-  }
-
-  function showOptionsMenu(id) {
-    setCardMenuVisibleById(id);
-  }
-
   return (
-    <>
-      <Header onClick={hideOptionsMenu} />
-      <Main onClick={hideOptionsMenu} showOptionsMenu={showOptionsMenu} cardMenuVisibleById={cardMenuVisibleById} />
-      <Footer onClick={hideOptionsMenu} />
-    </>
+    <ContextWrapper>
+      <LightboxContextWrapper>
+        <Header />
+        <Main />
+        <Footer />
+        <Form />
+      </LightboxContextWrapper>
+    </ContextWrapper>
   )
 }
